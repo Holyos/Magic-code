@@ -1250,7 +1250,7 @@ namespace Magic{
                 else if (Main.countGreatTree[pTarget.kingdom][i].isRuin())
                     Main.countGreatTree[pTarget.kingdom].Remove(Main.countGreatTree[pTarget.kingdom][i]);
             }
-            if (Main.countGreatTree[pTarget.kingdom].Count<1+pTarget.kingdom.cities.Count){
+            if (Main.countGreatTree[pTarget.kingdom].Count < 1 + pTarget.kingdom.cities.Count){
                 if (!Main.listOfBuilding.ContainsKey(pTarget.a))
                 {
                     Great = FunctionalAction.spawn_building(pTarget.a, pTile, build, (int)(pTarget.a.stats[S.max_age]/40), true);
